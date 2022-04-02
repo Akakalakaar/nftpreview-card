@@ -1,0 +1,185 @@
+root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* main bg */
+    --Verydarkblue: hsl(217, 54%, 11%);
+    /* main bg */
+
+    /* card bg */
+    --Verydarkblue: hsl(216, 50%, 16%);
+    /* card bg */
+
+    /* (line) */
+    --Verydarkblue: hsl(215, 32%, 27%);
+    /* (line) */
+
+    --White: hsl(0, 0%, 100%);
+}
+
+/* Font size (paragraph): 18px */
+
+/* DESKTOP CSS STARTS */
+body{
+    background:hsl(217, 54%, 11%);
+    font-family: 'Outfit';  
+    color: white;
+}
+.main-box{
+    background:hsl(216, 50%, 16%);
+    margin:0 auto;    
+    margin-top: 100px;
+    width:300px;
+    height:540px;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+#equi{
+    margin:15px 0 0 15px;
+    width:270px;
+    border-radius: 10px;
+}
+h2{
+    font-family: 600;
+    margin-left: 15px;
+}
+p{  
+    font-weight: 400;
+    color:hsl(214, 30%, 46%);
+    margin-left: 15px;
+    font-size: 16px;
+    padding-right: 2px;
+}
+
+#view{
+    position: absolute;
+    top:230px;
+    left:740px;
+    opacity: 0;
+    transition: .8s ease;
+    
+}
+.eye{ opacity: 0;
+    position: absolute;
+    top:120px;
+    width:268px;
+    height: 271px;
+    margin-left: 15px;
+   
+    background: cyan;
+    transition: .8s ease;
+}
+.images:hover #view{
+    opacity: 1;
+}
+.images:hover .eye,#equi{
+    opacity: .5;
+    
+}
+/* TYPO DIV STARTS */
+
+.typo,.ethereum,.duration{
+    display: flex; 
+    align-items: center;
+}
+.typo{
+    justify-content:space-between;
+    margin-top: 10px;
+}
+#clock{
+    height:18px;
+    margin-right: -10px;
+}
+.ethereum{
+    margin-left: 15px;
+}
+.duration{
+    margin-right: 20px;
+}
+#ethe{
+    margin-right:-8px;
+}
+#eth-price{
+    font-size: 13px;
+    margin-right: 50px;
+    color:cyan;
+}
+#duration{
+    font-weight: 300;
+}
+hr{
+    color:hsla(215, 32%, 27%, 0.603);
+    width:270px;
+    height:.15px;
+    border-width: .0025px;
+}
+#avatar{
+    height: 30px;
+    margin-left: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -15px;
+}
+.end p{
+    font-size: 15px;
+    margin-left: -5px;
+}
+p span{
+    color: rgb(211, 211, 211);
+}
+p:hover,h2:hover,P span a:hover{
+    color:cyan;
+    transition: .5s ease;
+    cursor: pointer;
+}
+a{   
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+
+
+
+
+/* ----------------
+MEDIA QUERY STARTS 
+-------------------*/
+
+@media (min-width:375px) and (max-width:400px){
+
+    body{
+        max-width:375px;
+        height: 667px;
+    }
+    
+    #view{
+        position: absolute;
+        top:240px;
+        left:165px;
+    }
+    .eye{
+        height: 267px;
+    }
+}
+@media (min-width:411px) and (max-width:450px){
+
+body{
+    max-width:375px;
+    height: 667px;
+}
+.main-box{
+    margin-left: 50px;
+}
+#view{
+    position: absolute;
+    top:230px;
+    left:190px;
+}
+.eye{
+    height: 267px;
+}
+}
